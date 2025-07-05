@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="15" failures="2" errors="0" time="5.465">
+  <testsuite name="patch apis" errors="0" failures="0" skipped="0" timestamp="2025-07-05T16:46:54" time="0.975" tests="1">
+    <testcase classname="patch apis happy patch" name="patch apis happy patch" time="0.52">
+    </testcase>
+  </testsuite>
+  <testsuite name="delete apis" errors="0" failures="0" skipped="0" timestamp="2025-07-05T16:46:54" time="0.845" tests="1">
+    <testcase classname="delete apis happy delete" name="delete apis happy delete" time="0.445">
+    </testcase>
+  </testsuite>
+  <testsuite name="put apis" errors="0" failures="0" skipped="0" timestamp="2025-07-05T16:46:55" time="0.743" tests="1">
+    <testcase classname="put apis simple put" name="put apis simple put" time="0.435">
+    </testcase>
+  </testsuite>
+  <testsuite name="Post Apis" errors="0" failures="1" skipped="0" timestamp="2025-07-05T16:46:54" time="3.903" tests="4">
+    <testcase classname="Post Apis create user successful" name="Post Apis create user successful" time="0.945">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  200
+Received:
+  404
+
+Message:
+  HTTP status 404 !== 200
+
+404 !== 200
+
+    at Expect._validateStatus (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/expect.js:106:14)
+    at Expect.validate (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/expect.js:47:10)
+    at Tosser.validateResponse (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:255:23)
+    at Tosser.validate (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:219:18)
+    at Tosser.toss (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:46:18)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Post Apis create user successful" name="Post Apis create user successful" time="1.117">
+    </testcase>
+    <testcase classname="Post Apis register successful" name="Post Apis register successful" time="0.998">
+    </testcase>
+    <testcase classname="Post Apis register unsuccessful" name="Post Apis register unsuccessful" time="0.302">
+    </testcase>
+  </testsuite>
+  <testsuite name="This is a sample api test" errors="0" failures="1" skipped="0" timestamp="2025-07-05T16:46:54" time="5.069" tests="8">
+    <testcase classname="This is a sample api test get api call" name="This is a sample api test get api call" time="0.29">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with query param" name="This is a sample api test get api call with query param" time="0.589">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with delay" name="This is a sample api test get api call with delay" time="3.48">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with expectJson" name="This is a sample api test get api call with expectJson" time="0.038">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with expectJsonLike" name="This is a sample api test get api call with expectJsonLike" time="0.038">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with expectJsonMatch" name="This is a sample api test get api call with expectJsonMatch" time="0.037">
+    </testcase>
+    <testcase classname="This is a sample api test get api call with expectJsonMatchStrict" name="This is a sample api test get api call with expectJsonMatchStrict" time="0.064">
+      <failure>assert.fail(received, expected)
+
+Message:
+  Json doesn&apos;t have property &apos;email&apos; at &apos;data&apos;
+    at Expect.fail (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/expect.js:464:12)
+    at Expect._validateJsonMatchStrictQuery (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/expect.js:330:14)
+    at Expect.validate (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/expect.js:63:10)
+    at Tosser.validateResponse (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:255:23)
+    at Tosser.validate (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:219:18)
+    at Tosser.toss (/Users/shashankgollapally/Desktop/Personal/Interview_Prep/PactumJs/node_modules/pactum/src/models/Tosser.js:46:18)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="This is a sample api test get api call with expectJsonSchema" name="This is a sample api test get api call with expectJsonSchema" time="0.053">
+    </testcase>
+  </testsuite>
+</testsuites>
