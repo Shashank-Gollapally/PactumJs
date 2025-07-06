@@ -3,6 +3,7 @@ const { email,regex,string,like,any,int } = require('pactum-matchers');
 
 describe("This is a sample api test", () => {
   pactum.request.setDefaultTimeout(5000)// bydefault it is 3seconds
+  
 
  // pactum.request.setDefaultHeaders("x-api-key", "reqres-free-v1");
   it("get api call", async () => {
