@@ -23,8 +23,11 @@ jobs:
         run: npm install
 
       - name: Run tests with coverage
-        run: npm run test -- --coverage
+        id: jest
         continue-on-error: true
+        run: |
+          npm run test -- --coverage
+          echo "status=$?" >> $GITHUB_OUTPUT
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
@@ -37,3 +40,15 @@ jobs:
         with:
           name: test-reports
           path: reports/
+
+      - name: Publish Test Report to GitHub UI
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: Jest Tests
+          path: reports/junit.xml
+          reporter: jest-junit
+
+      - name: Fail pipeline if tests failed
+        if: steps.jest.outputs.status != '0'
+        run: exit 1
