@@ -24,9 +24,6 @@ jobs:
 
       - name: Run tests with coverage
         run: npm run test -- --coverage
-
-      - name: Run tests with coverage
-        run: npm run test -- --coverage
         continue-on-error: true
 
       - name: Upload coverage report
