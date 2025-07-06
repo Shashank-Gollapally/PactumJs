@@ -24,7 +24,30 @@ This repository contains automated API tests built with:
 npm install
 npm run test
 
+```
+
+🚀 Check coverage
+bash
+Copy
+Edit
+open coverage/lcov-report/index.html
+✅ GitHub Actions
+Automatically triggers on:
+
+pull_request to main
+
+push to main
+
+Publishes JUnit & HTML reports
+
+Displays inline test results on PRs with dorny/test-reporter
+
 📂 Artifacts
 📝 HTML Test Reports: reports/test-report.html
 
 📊 Coverage Reports: coverage/lcov-report/index.html
+
+📣 Contribution
+PRs welcome! All changes should have passing tests before merging.
+
+
